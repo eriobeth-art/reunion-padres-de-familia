@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Reunión de Madres, Padres de Familia y Tutores · EPOANT</title>
+<link rel="icon" href="logo_epoant.jpg" type="image/jpeg">
+<meta name="theme-color" content="#0b315d">
+<meta name="description" content="Presentación interactiva de la reunión de madres, padres de familia y tutores de la EPOANT, ciclo escolar 2026–2027.">
+<style>
+:root{--navy:#0b315d;--navy2:#143f73;--gold:#d7ad45;--cream:#f7f2e6;--wine:#6f1f34;--ink:#17324d;--muted:#5e6d7c;--white:#fff;--ok:#2f7d4a;--danger:#a73737;--shadow:0 14px 40px rgba(10,35,68,.15)}
+*{box-sizing:border-box}html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(135deg,#eef4fb,#faf7ef)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(11,49,93,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(11,49,93,.04) 1px,transparent 1px);background-size:28px 28px}
+.app{height:100%;display:grid;grid-template-rows:auto 1fr auto;position:relative;z-index:1}.topbar{display:flex;align-items:center;gap:14px;padding:10px 18px;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);border-bottom:1px solid #dbe3ec;box-shadow:0 3px 14px rgba(10,35,68,.06)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}.brand img{width:54px;height:54px;object-fit:cover;border-radius:50%;border:2px solid var(--gold);box-shadow:0 2px 8px rgba(0,0,0,.12)}.brand h1{font-size:16px;margin:0;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.brand small{display:block;color:var(--muted);font-size:12px}.spacer{flex:1}
+.badge{background:var(--cream);border:1px solid #ead9a7;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:700;color:var(--navy)}.clock{font-variant-numeric:tabular-nums}.progress-wrap{width:170px}.progress-label{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:4px}.bar{height:7px;background:#e7edf3;border-radius:99px;overflow:hidden}.bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),#f0c96d);transition:.25s}
+.stage{position:relative;overflow:hidden}.slide{position:absolute;inset:0;padding:28px 42px 24px;display:none;overflow:auto}.slide.active{display:block;animation:fade .28s ease}@keyframes fade{from{opacity:.1;transform:translateY(8px)}to{opacity:1;transform:none}}
+.hero{min-height:100%;display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center}.kicker{letter-spacing:.14em;text-transform:uppercase;color:var(--wine);font-weight:800;font-size:13px}.title{font-size:clamp(38px,5vw,72px);line-height:.98;margin:10px 0 16px;color:var(--navy)}.subtitle{font-size:clamp(17px,2vw,25px);line-height:1.45;color:var(--muted);max-width:900px}.quote{margin-top:26px;padding:22px 24px;border-left:6px solid var(--gold);background:rgba(255,255,255,.78);border-radius:14px;box-shadow:var(--shadow);font-family:Georgia,serif;font-size:clamp(22px,2.4vw,34px);line-height:1.35;color:#1f3850}.quote b{color:var(--wine)}
+.hero-card{background:linear-gradient(145deg,var(--navy),#0f477f);border-radius:28px;padding:28px;color:#fff;box-shadow:var(--shadow);min-height:430px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}.hero-card:after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;border:1px solid rgba(255,255,255,.14);right:-90px;top:-70px}.hero-card img{width:180px;height:180px;object-fit:cover;border-radius:50%;border:5px solid var(--gold);background:#fff}.hero-card h2{font-size:30px;margin:18px 0 8px}.hero-card p{opacity:.9;line-height:1.5}
+.section-head{display:flex;align-items:flex-end;gap:16px;margin-bottom:20px}.num{width:58px;height:58px;border-radius:16px;background:var(--gold);display:grid;place-items:center;font-size:28px;font-weight:900;color:var(--navy);box-shadow:0 8px 22px rgba(215,173,69,.3)}.section-head h2{margin:0;font-size:36px;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted)}
+.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.card{background:rgba(255,255,255,.92);border:1px solid #dfe7ef;border-radius:18px;padding:18px;box-shadow:0 8px 26px rgba(10,35,68,.08)}.card h3{margin:0 0 8px;color:var(--navy);font-size:20px}.card p{margin:0;color:var(--muted);line-height:1.45}.icon{font-size:28px;margin-bottom:8px}.tag{display:inline-block;border-radius:999px;padding:5px 9px;background:#edf4fb;color:var(--navy);font-size:11px;font-weight:800;margin-top:10px}
+.agenda-item{display:flex;gap:14px;align-items:center;padding:14px 16px;background:#fff;border:1px solid #dfe6ee;border-radius:16px;box-shadow:0 6px 20px rgba(10,35,68,.06)}.agenda-item strong{font-size:18px;color:var(--navy)}.agenda-time{margin-left:auto;background:var(--cream);border:1px solid #ead9a7;padding:6px 9px;border-radius:999px;font-weight:800;color:var(--wine);font-size:12px}
+.abc{display:grid;grid-template-columns:1fr 1.25fr;gap:24px}.abc-cover{background:white;border-radius:20px;padding:12px;box-shadow:var(--shadow)}.abc-cover img{width:100%;height:360px;object-fit:contain;border-radius:14px}.abc-letters{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}.abc-letter{border-radius:18px;padding:18px;text-align:center;color:#fff;font-weight:800}.abc-letter b{display:block;font-size:40px}.a{background:#6c3a88}.b{background:#b98822}.c{background:#2f766b}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}.list{margin:0;padding-left:22px;line-height:1.55}.list li{margin:8px 0}.rights{border-top:5px solid #2f7d4a}.duties{border-top:5px solid var(--gold)}
+.eval-img{width:100%;max-height:420px;object-fit:contain;background:#fff;border-radius:18px;box-shadow:var(--shadow)}.callout{background:linear-gradient(120deg,#fff6da,#fff);border:1px solid #ead9a7;border-radius:16px;padding:16px 18px;font-size:20px;font-weight:800;color:var(--wine);margin-top:15px}
+.calendar-layout{display:grid;grid-template-columns:1.45fr .55fr;gap:20px}.calendar-img{width:100%;max-height:520px;object-fit:contain;background:white;border-radius:18px;box-shadow:var(--shadow)}
+.orient-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.orient-card{cursor:pointer;transition:.18s}.orient-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(10,35,68,.12)}.orient-card .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--gold);font-weight:900;color:var(--navy);margin-bottom:8px}.orient-card h3{font-size:17px}.orient-card p{font-size:13px}.orient-card small{display:block;color:var(--wine);font-weight:800;margin-top:8px}
+.notes{display:grid;grid-template-columns:1fr .9fr;gap:20px}.note-area{width:100%;min-height:290px;resize:vertical;border:1px solid #ccd8e4;border-radius:18px;padding:16px;font:inherit;background:#fff;outline:none;box-shadow:inset 0 1px 4px rgba(0,0,0,.04)}
+.footer{display:flex;align-items:center;gap:10px;padding:9px 16px;background:rgba(255,255,255,.95);border-top:1px solid #dce5ee}.btn{appearance:none;border:0;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;background:var(--navy);color:#fff}.btn.alt{background:#eef3f8;color:var(--navy)}.btn.gold{background:var(--gold);color:var(--navy)}.btn:disabled{opacity:.4;cursor:not-allowed}.slide-ind{font-size:12px;color:var(--muted);min-width:70px;text-align:center}
+.modal{position:fixed;inset:0;background:rgba(7,25,45,.62);display:none;align-items:center;justify-content:center;padding:24px;z-index:99}.modal.open{display:flex}.modal-box{max-width:760px;width:100%;background:#fff;border-radius:22px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.3)}.modal-box h3{font-size:28px;color:var(--navy);margin:0 0 10px}.modal-box ul{line-height:1.55}.modal-top{display:flex;justify-content:space-between;gap:12px}.close{border:0;background:#edf2f7;width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer}
+.small{font-size:13px;color:var(--muted)}.source{font-size:11px;color:#7a8794;margin-top:10px}.center{text-align:center}.bigline{font-size:32px;font-weight:900;color:var(--navy);line-height:1.2}.final{display:grid;place-items:center;height:100%;text-align:center}.final-box{max-width:900px}.final-box h2{font-size:56px;color:var(--navy);margin:0 0 16px}.final-box p{font-size:23px;color:var(--muted)}
+@media(max-width:900px){.hero,.abc,.split,.calendar-layout,.notes{grid-template-columns:1fr}.g3,.g4,.orient-grid{grid-template-columns:repeat(2,1fr)}.slide{padding:22px}.progress-wrap{display:none}.hero-card{min-height:300px}.abc-cover img{height:260px}}
+@media(max-width:620px){.g2,.g3,.g4,.orient-grid{grid-template-columns:1fr}.brand small{display:none}.badge.hide-sm{display:none}.slide{padding:16px}.section-head h2{font-size:28px}.title{font-size:42px}.footer{flex-wrap:wrap}.hero-card img{width:130px;height:130px}}
+@media print{.topbar,.footer,.modal{display:none!important}.slide{position:relative;display:block!important;page-break-after:always;height:auto;min-height:100vh}.stage{overflow:visible}.app{display:block}.orient-card{break-inside:avoid}}
+
+/* Ajuste de legibilidad para proyección: tipografía general ampliada */
+body{font-size:18px}
+.brand h1{font-size:19px}.brand small{font-size:14px}
+.badge{font-size:14px}.progress-label{font-size:13px}
+.kicker{font-size:15px}.subtitle{font-size:clamp(20px,2.2vw,28px)}
+.section-head h2{font-size:40px}.section-head p{font-size:18px}
+.card h3{font-size:23px}.card p{font-size:17px}.tag{font-size:13px}
+.agenda-item strong{font-size:21px}.agenda-time{font-size:14px}
+.list{font-size:18px;line-height:1.6}.orient-card h3{font-size:20px}.orient-card p{font-size:16px}.orient-card small{font-size:14px}
+.callout{font-size:22px}.small{font-size:15px}.source{font-size:13px}.slide-ind{font-size:14px}
+.btn{font-size:16px}.modal-box{max-width:820px}.modal-box h3{font-size:32px}.modal-box ul{font-size:18px;line-height:1.65}
+.note-area{font-size:17px}.final-box p{font-size:26px}
+@media(max-width:900px){body{font-size:17px}.section-head p{font-size:17px}.card p{font-size:16px}.list{font-size:17px}}
+@media(max-width:620px){body{font-size:16px}.section-head h2{font-size:31px}.card h3{font-size:21px}.agenda-item strong{font-size:19px}.btn{font-size:15px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand"><img src="logo_epoant.jpg" alt="Logo EPOANT"><div><h1>EPOANT · Reunión con Madres, Padres y Tutores</h1><small>Ciclo Escolar 2026–2027 · Turno Matutino</small></div></div>
+    <div class="spacer"></div>
+    <div class="badge hide-sm">⏱ Reunión: <span class="clock" id="meetingClock">90:00</span></div>
+    <div class="progress-wrap"><div class="progress-label"><span>Avance</span><span id="progressPct">0%</span></div><div class="bar"><i id="progressBar"></i></div></div>
+    <button class="btn alt" id="fullscreenBtn" title="Pantalla completa">⛶</button>
+  </header>
+
+  <main class="stage" id="stage">
+    <section class="slide active" data-title="Bienvenida" data-min="8">
+      <div class="hero">
+        <div>
+          <div class="kicker">Escuela Preparatoria Oficial Anexa a la Normal de Tejupilco</div>
+          <h1 class="title">Reunión de Madres, Padres de Familia y Tutores</h1>
+          <p class="subtitle">Orientación Educativa · Ciclo Escolar 2026–2027</p>
+          <div class="quote">“El éxito de un estudiante de preparatoria no se construye a solas; detrás de cada logro está el <b>amor incondicional</b>, el acompañamiento y la confianza de una madre, un padre o un tutor.”</div>
+          <p class="subtitle" style="margin-top:18px">Gracias por caminar junto a sus hijas e hijos en esta etapa de su formación.</p>
+        </div>
+        <div class="hero-card">
+          <img src="logo_epoant.jpg" alt="EPOANT">
+          <h2>Bienvenidas y bienvenidos</h2>
+          <p>Una reunión para informar, prevenir, acompañar y fortalecer la corresponsabilidad entre escuela, familia y estudiante.</p>
+          <span class="tag" style="background:#fff;color:#0b315d">Duración total: 90 minutos</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Orden del día" data-min="3">
+      <div class="section-head"><div class="num">☰</div><div><h2>Orden del día</h2><p>Ruta de trabajo para una reunión concreta y ágil.</p></div></div>
+      <div class="grid g2">
+        <div class="agenda-item"><strong>1. Bienvenida</strong><span class="agenda-time">8 min</span></div>
+        <div class="agenda-item"><strong>2. ABC de las emociones</strong><span class="agenda-time">12 min</span></div>
+        <div class="agenda-item"><strong>3. Lineamientos Escolares</strong><span class="agenda-time">15 min</span></div>
+        <div class="agenda-item"><strong>4. Evaluación</strong><span class="agenda-time">12 min</span></div>
+        <div class="agenda-item"><strong>5. Calendario Escolar</strong><span class="agenda-time">8 min</span></div>
+        <div class="agenda-item"><strong>6. Acuerdos de Orientación Educativa</strong><span class="agenda-time">25 min</span></div>
+        <div class="agenda-item"><strong>7. Asuntos Generales</strong><span class="agenda-time">8 min</span></div>
+        <div class="agenda-item"><strong>Cierre</strong><span class="agenda-time">2 min</span></div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="ABC de las emociones" data-min="12">
+      <div class="section-head"><div class="num">2</div><div><h2>Entrega del libro: ABC de las emociones</h2><p>Salud mental y bienestar socioemocional de las y los jóvenes.</p></div></div>
+      <div class="abc">
+        <div class="abc-cover"><img src="abc_portada.png" alt="ABC de las emociones"><div class="source">Estrategia Nacional de Atención a la Salud Mental para las y los Jóvenes.</div></div>
+        <div>
+          <div class="card"><h3>Propósito</h3><p>Promover la salud mental y el bienestar socioemocional en jóvenes de 14 a 18 años, con participación de estudiantes, docentes y familias.</p></div>
+          <div class="abc-letters">
+            <div class="abc-letter a"><b>A</b>Reconocer</div>
+            <div class="abc-letter b"><b>B</b>Comprender</div>
+            <div class="abc-letter c"><b>C</b>Actuar</div>
+          </div>
+          <div class="grid g2" style="margin-top:14px">
+            <div class="card"><div class="icon">👨‍👩‍👧</div><h3>En familia</h3><p>Escuchar, acompañar y hablar de emociones sin juicio fortalece la prevención y la detección temprana.</p></div>
+            <div class="card"><div class="icon">☎️</div><h3>Recurso de apoyo</h3><p><b>Línea de la Vida: 800 911 2000.</b><br>“Si necesitas apoyo, te acompañamos.”</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Lineamientos" data-min="15">
+      <div class="section-head"><div class="num">3</div><div><h2>Lineamientos Escolares</h2><p>Lo esencial: derechos, obligaciones y corresponsabilidad.</p></div></div>
+      <div class="split">
+        <div class="card rights"><h3>✅ Derechos principales</h3><ul class="list">
+          <li>Recibir educación en condiciones de igualdad y equidad.</li><li>Ser tratado con respeto y estudiar en un ambiente seguro y libre de violencia.</li><li>Conocer mecanismos de evaluación y resultados.</li><li>Recibir orientación y tutoría para prevenir rezago o abandono.</li><li>Justificar inasistencias conforme a las disposiciones aplicables.</li><li>Recibir atención en caso de emergencia y protección de datos personales.</li>
+        </ul></div>
+        <div class="card duties"><h3>📌 Obligaciones principales</h3><ul class="list">
+          <li>Asistir con regularidad y puntualidad.</li><li>Portar credencial y uniforme correctamente.</li><li>Cumplir tareas, trabajos y evaluaciones.</li><li>Actuar con respeto y honestidad; no copiar en evaluaciones.</li><li>Cuidar instalaciones y materiales.</li><li>Usar celular o dispositivos solo con fines académicos y autorización docente.</li><li>Cumplir medidas de seguridad, salud y protección civil.</li>
+        </ul></div>
+      </div>
+      <div class="callout">La disciplina tiene un sentido educativo y formativo: busca reflexión, responsabilidad y reparación del daño.</div>
+      <div class="source">Fuente: Lineamientos para los estudiantes de planteles oficiales e incorporados de Educación Media Superior, Estado de México.</div>
+    </section>
+
+    <section class="slide" data-title="Evaluación" data-min="12">
+      <div class="section-head"><div class="num">4</div><div><h2>Evaluación</h2><p>Tres parciales, seguimiento oportuno y prevención del riesgo académico.</p></div></div>
+      <div class="grid g2">
+        <div><img class="eval-img" src="evaluacion.png" alt="Ejemplos de evaluación"></div>
+        <div class="grid">
+          <div class="card"><h3>Ejemplos rápidos</h3><p><b>8 + 5 + 6 → 6 → Aprobado</b></p><p><b>7 + 7 + 7 → 7 → Aprobado</b></p><p><b>5 + 5 + 10 → 5 → No aprobado</b> por contar con dos parciales reprobados.</p></div>
+          <div class="card"><h3>Mensaje a las familias</h3><p>No esperar al tercer parcial. Ante la primera calificación reprobatoria, conviene intervenir desde ese momento mediante comunicación con docente, Orientación Educativa y acompañamiento familiar.</p></div>
+          <div class="callout" style="margin:0">Seguimiento temprano = más oportunidades de recuperación.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Calendario" data-min="8">
+      <div class="section-head"><div class="num">5</div><div><h2>Calendario Escolar 2026–2027</h2><p>Fechas que las familias deben tener presentes.</p></div></div>
+      <div class="calendar-layout">
+        <img class="calendar-img" src="calendario_2026_2027.png" alt="Calendario escolar 2026-2027">
+        <div class="grid">
+          <div class="card"><h3>📘 Académico</h3><p>Inicio y fin de semestre, evaluación, diagnóstico y nivelación.</p></div>
+          <div class="card"><h3>🏖️ Recesos</h3><p>Periodos vacacionales, recesos y suspensiones de labores.</p></div>
+          <div class="card"><h3>📝 Trámites</h3><p>Ingreso, reingreso y entrega de documentación académica y administrativa.</p></div>
+          <div class="card"><h3>🏫 Institucional</h3><p>Jornadas de acompañamiento, colegiados, planeación y cierre del ciclo escolar.</p></div>
+        </div>
+      </div>
+      <div class="source">Calendario oficial 2026–2027 para instituciones de Educación Media Superior de Control Estatal.</div>
+    </section>
+
+    <section class="slide" data-title="Acuerdos de Orientación" data-min="25">
+      <div class="section-head"><div class="num">6</div><div><h2>Acuerdos de Orientación Educativa</h2><p>Haz clic en cada tarjeta para ver el acuerdo concreto.</p></div></div>
+      <div class="orient-grid" id="orientGrid">
+        <div class="card orient-card" data-key="entrada"><span class="n">1</span><h3>Horario de entrada</h3><p>Ingreso 7:00 h. Tolerancia máxima de 10 minutos solo en casos excepcionales y justificados.</p><small>La puntualidad también forma.</small></div>
+        <div class="card orient-card" data-key="uniforme"><span class="n">2</span><h3>Uniforme escolar</h3><p>Completo, según día y horario, sin modificaciones ni alteraciones.</p><small>Presentación adecuada = compromiso.</small></div>
+        <div class="card orient-card" data-key="justificacion"><span class="n">3</span><h3>Justificación de inasistencias</h3><p>Plazos de tres días hábiles para solicitar y después presentar el justificante.</p><small>El justificante no sustituye trabajos.</small></div>
+        <div class="card orient-card" data-key="salidas"><span class="n">4</span><h3>Pases de salida</h3><p>Solo por salud, problemas familiares graves o situaciones de seguridad e integridad.</p><small>Salida segura, responsabilidad compartida.</small></div>
+        <div class="card orient-card" data-key="salud"><span class="n">5</span><h3>Situaciones de salud</h3><p>Informar condiciones y tratamientos. El personal no administra medicamentos.</p><small>Cuidemos su salud.</small></div>
+        <div class="card orient-card" data-key="seguridad"><span class="n">6</span><h3>Seguridad y circuito cerrado</h3><p>Videovigilancia, cuidado de pertenencias y salida solo con autorización.</p><small>Un entorno seguro favorece el aprendizaje.</small></div>
+        <div class="card orient-card" data-key="constancia"><span class="n">7</span><h3>Constancia de Orientación</h3><p>Constancia de Trabajo Académico y Conductual como requisito de inscripción al siguiente semestre.</p><small>Acompañar también es educar.</small></div>
+        <div class="card orient-card" data-key="manual"><span class="n">8</span><h3>Compendio / Manual</h3><p>Material de trabajo digital: imprimir, integrar, engargolar y mantener organizado.</p><small>Trabajo constante y organizado.</small></div>
+      </div>
+      <div class="callout">Corresponsabilidad: escuela + familia + estudiante.</div>
+    </section>
+
+    <section class="slide" data-title="Asuntos generales" data-min="8">
+      <div class="section-head"><div class="num">7</div><div><h2>Asuntos Generales</h2><p>Espacio para avisos, preguntas, acuerdos y compromisos.</p></div></div>
+      <div class="notes">
+        <div class="card"><h3>📝 Acuerdos de la reunión</h3><textarea id="notes" class="note-area" placeholder="Escriba aquí los acuerdos, pendientes o avisos de último momento..."></textarea><p class="small">Las notas se guardan automáticamente en este dispositivo.</p></div>
+        <div class="grid">
+          <div class="card"><h3>Preguntas guía</h3><ul class="list"><li>¿Qué dudas permanecen sobre evaluación?</li><li>¿Qué situaciones particulares requieren seguimiento?</li><li>¿Qué acuerdos familia–escuela debemos dejar claros?</li></ul></div>
+          <div class="card"><h3>Compromiso compartido</h3><p>Comunicación respetuosa y permanente, puntualidad, responsabilidad, disciplina, autocuidado y acompañamiento académico.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="Cierre" data-min="2">
+      <div class="final"><div class="final-box">
+        <div class="kicker">Cierre</div><h2>Gracias por acompañarnos</h2>
+        <p>La formación integral se fortalece cuando escuela y familia trabajan en la misma dirección.</p>
+        <div class="quote" style="font-size:28px">“Acompañar también es educar.”</div>
+        <p style="margin-top:28px"><b>Servicio de Orientación Educativa</b></p>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <button class="btn alt" id="prevBtn">← Anterior</button>
+    <button class="btn gold" id="agendaBtn">☰ Orden del día</button>
+    <div class="spacer"></div>
+    <div class="slide-ind" id="slideInd">1 / 9</div>
+    <div class="badge">Sección: <span id="sectionTime">8 min</span></div>
+    <button class="btn" id="nextBtn">Siguiente →</button>
+  </footer>
+</div>
+
+<div class="modal" id="modal"><div class="modal-box"><div class="modal-top"><h3 id="modalTitle"></h3><button class="close" id="closeModal">×</button></div><div id="modalBody"></div></div></div>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];let current=0;let remaining=90*60;let running=false;let timer=null;
+const meetingClock=document.getElementById('meetingClock'),progressBar=document.getElementById('progressBar'),progressPct=document.getElementById('progressPct'),slideInd=document.getElementById('slideInd'),sectionTime=document.getElementById('sectionTime');
+function fmt(s){const m=Math.floor(s/60),x=s%60;return `${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}`}
+function tick(){if(remaining>0){remaining--;meetingClock.textContent=fmt(remaining)}else{clearInterval(timer)}}
+meetingClock.addEventListener('click',()=>{running=!running;if(running){timer=setInterval(tick,1000);meetingClock.parentElement.style.background='#e8f5ec'}else{clearInterval(timer);meetingClock.parentElement.style.background=''}})
+function show(i){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=>s.classList.toggle('active',j===current));document.getElementById('prevBtn').disabled=current===0;document.getElementById('nextBtn').disabled=current===slides.length-1;slideInd.textContent=`${current+1} / ${slides.length}`;sectionTime.textContent=`${slides[current].dataset.min} min`;const p=Math.round((current/(slides.length-1))*100);progressBar.style.width=p+'%';progressPct.textContent=p+'%';window.scrollTo(0,0)}
+document.getElementById('prevBtn').onclick=()=>show(current-1);document.getElementById('nextBtn').onclick=()=>show(current+1);document.getElementById('agendaBtn').onclick=()=>show(1);
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown')show(current+1);if(e.key==='ArrowLeft'||e.key==='PageUp')show(current-1);if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1);if(e.key==='Escape')document.getElementById('modal').classList.remove('open')});
+document.getElementById('fullscreenBtn').onclick=()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()};
+const detail={
+ entrada:['Horario de entrada','<ul><li>Ingreso a la institución: <b>7:00 horas</b>.</li><li>Tolerancia máxima de <b>10 minutos</b> solo en situaciones excepcionales y justificadas, con acompañamiento de madre, padre o tutor.</li><li>No se aceptan retardos injustificados mediante WhatsApp ni llamadas.</li><li>Después del horario y la tolerancia, el estudiante permanecerá en Orientación Educativa hasta que acuda su responsable.</li></ul>'],
+ uniforme:['Uniforme escolar','<ul><li>Uniforme completo correspondiente al día y horario.</li><li>Debe portarse correctamente durante toda la jornada, sin modificaciones ni alteraciones.</li><li>Familia y estudiante comparten la responsabilidad de cumplir esta disposición.</li><li>La reincidencia se canaliza conforme a los Lineamientos Escolares.</li></ul>'],
+ justificacion:['Justificación de inasistencias','<ul><li><b>Primer momento:</b> madre, padre o tutor cuenta con máximo tres días hábiles desde la inasistencia para solicitar justificante.</li><li><b>Segundo momento:</b> emitido el justificante, el estudiante dispone de tres días hábiles para presentarlo a docentes.</li><li>En motivos de salud se aceptan documentos médicos de instituciones correspondientes.</li><li>El justificante <b>no sustituye</b> trabajos, actividades, procedimientos académicos ni evaluaciones.</li></ul>'],
+ salidas:['Pases de salida','<ul><li>Se expiden únicamente por salud, problemas familiares graves o situaciones relacionadas con seguridad o integridad.</li><li>No se expiden por olvido de materiales, tareas, trabajos u objetos personales.</li><li>Durante actividades institucionales programadas no se expedirán, salvo situación plenamente justificada.</li><li>La persona autorizada debe identificarse.</li></ul>'],
+ salud:['Situaciones de salud','<ul><li>Evitar enviar a clases a estudiantes con síntomas o enfermedades que afecten su bienestar o desempeño.</li><li>El personal de la institución no está autorizado para administrar medicamentos.</li><li>Informar oportunamente cualquier condición de salud o tratamiento médico.</li><li>Proporcionar diagnóstico, receta o indicaciones médicas correspondientes y asegurar que el estudiante cuente con sus medicamentos.</li></ul>'],
+ seguridad:['Seguridad y circuito cerrado','<ul><li>La institución cuenta con circuito cerrado de videovigilancia.</li><li>La escuela no se responsabiliza por objetos personales extraviados.</li><li>Evitar portar objetos de valor o cantidades importantes de dinero.</li><li>Abandonar las instalaciones sin autorización se considera contrario a las disposiciones de seguridad.</li><li>Los ajustes de jornada se notificarán oportunamente por el grupo oficial de WhatsApp.</li></ul>'],
+ constancia:['Constancia de Orientación Educativa','<ul><li>Orientación Educativa tiene carácter eminentemente formativo.</li><li>A partir del ciclo escolar 2026–2027 se expedirá una <b>Constancia de Trabajo Académico y Conductual</b>.</li><li>Se considera requisito dentro del proceso de inscripción al siguiente semestre.</li><li>Su propósito es fortalecer el compromiso del estudiante con su formación integral.</li></ul>'],
+ manual:['Compendio / Manual de Orientación Educativa','<ul><li>Orientación Educativa proporcionará en formato digital el material de trabajo requerido.</li><li>Cada estudiante deberá imprimirlo, integrarlo y engargolarlo adecuadamente.</li><li>Debe mantenerse organizado y actualizado y portarse diariamente en la mochila.</li><li>Las actividades de Orientación pueden desarrollarse en espacios disponibles de la jornada escolar.</li></ul>']
+};
+const modal=document.getElementById('modal');document.querySelectorAll('.orient-card').forEach(c=>c.onclick=()=>{const d=detail[c.dataset.key];document.getElementById('modalTitle').textContent=d[0];document.getElementById('modalBody').innerHTML=d[1];modal.classList.add('open')});document.getElementById('closeModal').onclick=()=>modal.classList.remove('open');modal.onclick=e=>{if(e.target===modal)modal.classList.remove('open')};
+const notes=document.getElementById('notes');notes.value=localStorage.getItem('epoant_reunion_notes')||'';notes.addEventListener('input',()=>localStorage.setItem('epoant_reunion_notes',notes.value));
+show(0);
+</script>
+</body>
+</html>
